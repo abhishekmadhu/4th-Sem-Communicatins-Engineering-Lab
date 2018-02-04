@@ -12,11 +12,11 @@ t=0:0.0001:1;
 % ac=input('Enter Amplitude of carrier wave:  ');
 % fc=input('Enter Frequency of carrier wave:  ');
 
-%%
+
 am=2; fm=10; %to debug
 ac=2; fc=100; %to debug
 
-%%
+
 mt = am*cos(2*pi*fm*t);
 ct = ac*cos(2*pi*fc*t);
 
@@ -24,16 +24,16 @@ st = (ac+mt).*cos(2*pi*fc*t);
 
 
 
-%% 
+
 dt=st.*cos(2*pi*fc*t);
 
-%%  BUTTER WORTH FILTER
+%BUTTER WORTH FILTER
 
 fs = 1000;
 [b, a] = butter(10, fc*2/fs);
 x1=filter(b,a,dt);
 
-%%
+
 subplot(5,1,1);
 plot(t,mt,'b')
 title('Message Signal m(t)', 'Color', 'green');
