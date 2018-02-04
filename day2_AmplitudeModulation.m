@@ -30,7 +30,7 @@ dt=st.*cos(2*pi*fc*t);
 %BUTTER WORTH FILTER
 
 fs = 1000;
-[b, a] = butter(10, fc*2/fs);
+[b, a] = butter(10, (fc*2)/fs);
 x1=filter(b,a,dt);
 
 
