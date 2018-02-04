@@ -5,7 +5,7 @@
 close all;
 clear all;
 clc;
-t=0:0.0001:1;
+t=0:0.001:1;
 
 % am=input('Enter Amplitude of message wave:  ');
 % fm=input('Enter Frequency of message wave:  ');
