@@ -1,4 +1,4 @@
-
+%sin discrete wave
 clc;
 clear all;
 close all;
